@@ -1,0 +1,40 @@
+<?php ob_start(); ?>
+
+     <table class="table table-striped mt-3 table-sm">
+          <tr class="table-dark">
+               <td>Agence </td>
+               <td>Véhicule</td>
+               <td>Client</td>
+               <td>Début</td>
+               <td>Fin</td>
+               <td>prix total</td>
+               <td>Date commande</td>
+               <td>Action</td>
+          </tr>
+
+          <?php foreach($commandes as $commande): ?>
+               <tr>
+                    <td> <?= $agenceMdl->getAgence($commande->getId_agence())->getTitre() ?> </td>
+                    <td>
+                        <img src="public/img/vehicule/<?= $vehMdl->getVehicule($commande->getId_vehicule())->getPhoto() ?>" alt="" class="img-fluid">
+                    </td>
+                    <td> <?= $membreMdl->getMembre($commande->getId_membre())->getPrenom() ?> </td>
+                    <td> <?= $commande->getDate_heure_depart() ?> </td>
+                    <td> <?= $commande->getDate_heure_fin() ?> </td>
+                    <td> <?= $commande->getPrix_total() ?>€ </td>
+                    <td> <?= $commande->getDate_enregistrement() ?> </td>
+                    <td>
+                         <a href="?action=modifier&id=<?= $commande->getId_commande() ?>"><i class="fas fa-pen"></i></a>
+                         &nbsp; - &nbsp;
+                         <a href="?action=supprimer&id=<?= $commande->getId_commande() ?>"><i class="fas fa-trash"></i></a>
+                    </td>
+               </tr>
+          <?php endforeach; ?>
+
+     </table>
+
+     
+<?php
+$content = ob_get_clean();
+
+include "views/template.phtml";

@@ -1,0 +1,62 @@
+
+    <form action="" method="post">
+        <div class="row">
+            <div class="col-6 mt-4">
+                <label for="pseudo">Login</label>
+                <input type="text" name="login" class="form-control" placeholder="Pseudo" value="<?= !empty($user) ? $user->getLogin() : '' ?>">
+                <span class="text-danger">
+                    <?= isset($_SESSION['errors']['login']) ? 'saisir un login valide' : '' ?>
+                </span>
+            </div>
+            <div class="col-6 mt-4">
+                <label for="email">Votre email</label>
+                <input type="email" name="email" class="form-control" placeholder="Email" value="<?= !empty($user) ? $user->getEmail() : '' ?>">
+            </div>
+            <div class="col-6 mt-4">
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="mdp" class="form-control"  value="<?= !empty($user) ? $user->getMdp() : '' ?>">
+                <span class="text-danger">
+                    <?= isset($_SESSION['errors']['mdp']) ? 'saisir un mdp valide' : '' ?>
+                </span>
+            </div>
+            <div class="col-6 mt-4">
+                <label for="civilite">Civilité</label>
+                <select name="sexe" class="form-select">
+                    <option value="homme">homme</option>
+                    <option value="femme">femme</option>
+                </select>
+            </div>
+            <div class="col-6 mt-4">
+                <label for="nom">Votre nom</label>
+                <input type="text" name="nom" class="form-control" placeholder="Nom" value="<?= !empty($user) ? $user->getNom() : '' ?>">
+                <span class="text-danger">
+                    <?= isset($_SESSION['errors']['nom']) ? 'saisir un login valide' : '' ?>
+                </span>
+            </div>
+    
+            <div class="col-6 mt-4">
+                <label for="prenom">Votre prénom</label>
+                <input type="text" name="prenom" class="form-control" placeholder="Prénom" value="<?= !empty($user) ? $user->getPrenom() : '' ?>">
+                <span class="text-danger">
+                    <?= isset($_SESSION['errors']['prenom']) ? 'saisir un login valide' : '' ?>
+                </span>
+            </div>   
+            <div class="col-6 mt-4">
+                <label for="prenom">Téléphone</label>
+                <input type="text" name="tel" class="form-control" placeholder="0102030405" value="<?= !empty($user) ? $user->getTel() : '' ?>">
+            </div>    
+            <div class="col-6 mt-4">
+                <label for="prenom">Adresse</label>
+                <input type="text" name="adresse" class="form-control" placeholder="adresse" value="<?= !empty($user) ? $user->getAdresse() : '' ?>">
+            </div>     
+            <div class="col-6 mt-4">
+                <label for="prenom">Code postal</label>
+                <input type="text" name="cp" class="form-control" placeholder="code postal" value="<?= !empty($user) ? $user->getCp() : '' ?>">
+            </div>  
+            <div class="col-6 mt-4">
+                <label for="prenom">Ville</label>
+                <input type="text" name="ville" class="form-control" placeholder="ville" value="<?= !empty($user) ? $user->getVille() : '' ?>">
+            </div>  
+        </div>
+        <input type="submit" class="btn btn-success mt-3">
+    </form>

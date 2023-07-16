@@ -1,0 +1,21 @@
+
+    <form action="" method="post">
+        <div class="row">
+            <div class="col-6 mt-4">
+                <label for="pseudo">Login</label>
+                <input type="text" name="login" class="form-control" placeholder="Pseudo" value="<?= !empty($user) ? $user->getLogin() : '' ?>">
+                <span class="text-danger">
+                    <?= isset($_SESSION['errors']['login']) ? 'saisir un login valide' : '' ?>
+                </span>
+            </div>
+   
+            <div class="col-6 mt-4">
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="mdp" class="form-control"  value="<?= !empty($user) ? $user->getMdp() : '' ?>">
+                <span class="text-danger">
+                    <?= isset($_SESSION['errors']['mdp']) ? 'saisir un mdp valide' : '' ?>
+                </span>
+            </div>
+        </div>
+        <input type="submit" class="btn btn-success mt-3">
+    </form>
