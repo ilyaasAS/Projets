@@ -1,0 +1,11 @@
+
+     <h2>liste de clients</h2>
+
+     <?php foreach($users as $user): ?>
+          <div> <strong> <?= $user->getPrenom() .' '. $user->getNom() ?> </strong> </div>
+          <?php foreach($voitures as $voiture): ?>
+               <?php if($user->getId() == $voiture->getProprio()->getId()): ?>
+                    <span class="d-block"> <?= $voiture->getMarque(); ?> </span>
+               <?php endif; ?>
+          <?php endforeach; ?>
+     <?php endforeach; ?>
