@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Le Language de base du Web: HTML</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- premier block -->
+      <header class="main-header clearfix">
+        <h1>Le journal sur le Code</h1>
+
+        <nav>
+          <a href="Blog.html"> Blog</a>
+          <a href="#">Teste moi</a>
+          <a href="flexbox.html">Flexbox</a>
+          <a href="css-grid.html">Grid</a>
+        </nav>
+
+        <!-- <div class="clear"></div> -->
+      </header>
+
+      <!-- <div class="row"> -->
+        <!-- 2eme block -->
+        <article>
+          <header class="post-header">
+            <h2>Le langage de base du Web : HTML</h2>
+
+            <div class="author-box">
+              <img
+                src="img/pretty_m.jpg"
+                alt="Portrait de Laura Jones"
+                height="50"
+                width="50"
+                class="author-img"
+              />
+
+              <p id="author" class="author">
+                Postée par <strong>Laura Jones</strong> le lundi 21 juin 2021
+              </p>
+            </div>
+
+            <img
+              src="img/post-img.jpg"
+              alt="code HTML à lécran"
+              width="500"
+              height="200"
+              class="post-img"
+            />
+
+            <button>😎J'aime</button>
+          </header>
+
+          <p>
+            Tous les sites et applications web modernes sont construits à l'aide
+            de trois technologies <em>fondamentales</em> : HTML, CSS et
+            JavaScript. Ce sont les langages du Web. Dans ce numéro, nous allons
+            nous concentrer sur le HTML. Nous allons apprendre ce qu'est le
+            HTML, et pourquoi vous devriez vous aussi l'apprendre.
+          </p>
+
+          <h3>Qu'est-ce que le HTML ?</h3>
+
+          <p>
+            HTML est l'abréviation de <strong>H</strong>yperText
+            <strong>M</strong>arkup <strong>L</strong>anguage. Il s'agit d'un
+            langage de balisage que les développeurs Web utilisent pour
+            structurer et décrire le contenu d'une page Web (ce n'est pas un
+            langage de programmation). Le HTML se compose d'éléments qui
+            décrivent différents types de contenu : paragraphes, liens, titres,
+            images, vidéo, etc. Les navigateurs Web comprennent le HTML et
+            rendent le code HTML sous forme de sites Web.
+          </p>
+
+          <p>En HTML, chaque élément est composé de 3 parties :</p>
+
+          <ol>
+            <li>La balise d'ouverture</li>
+            <li>La balise de fermeture</li>
+            <li>L'élément proprement dit</li>
+          </ol>
+
+          <p>
+            <a href="https://developer.mozilla.org/en-US/docs">MDN Web Docs</a>
+          </p>
+
+          <h3>Pourquoi apprendre le HTML ?</h3>
+
+          <p>
+            Il existe d'innombrables raisons d'apprendre le langage fondamental
+            du Web. Voici 5 d'entre elles :
+          </p>
+
+          <ul>
+            <li>
+              Pour être capable d'utiliser le langage fondamental du
+              développement web
+            </li>
+            <li>
+              Pour réaliser à la main de beaux sites Web au lieu de s'en
+              remettre à des outils comme Worpress ou Wix.
+            </li>
+            <li>Pour réaliser des applications web</li>
+            <li>Pour impressionner vos amis</li>
+            <li>Pour s'amuser</li>
+          </ul>
+
+          <p>
+            J'espère que vous avez appris quelque chose de nouveau ici. À la
+            prochaine fois !
+          </p>
+        </article>
+
+        <!-- 3eme block -->
+        <aside>
+          <h4>Quelques Postes</h4>
+          <ul class="related">
+            <li class="related-post">
+              <img
+                src="img/post-1.jpg"
+                alt="livres de codage"
+                width="75"
+                height="75"
+              />
+              <div>
+                <a href="#" class="related-link"
+                  >Apprendre le developpement web</a
+                >
+                <p class="related-author">De paul Jack</p>
+              </div>
+            </li>
+
+            <li class="related-post">
+              <img
+                src="img/post-2.jpg"
+                alt="Passion du code"
+                width="75"
+                height="75"
+              />
+              <div>
+                <a href="#" class="related-link">Découvrir le monde du CSS</a>
+                <p class="related-author">De Ken Boutros</p>
+              </div>
+            </li>
+
+            <li class="related-post">
+              <img
+                src="img/post-3.jpg"
+                alt="Code JavaScript"
+                width="75"
+                height="75"
+              />
+              <div>
+                <a href="#" class="related-link"
+                  >Animez vos sites avec du JavaScript</a
+                >
+                <p class="related-author">De Ben Carton</p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      <!-- </div> -->
+
+      <footer>
+        <p id="copyright" class="copyright text">
+          Copyright &copy; 2021 par La Revue du Code
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<!-- 
+    Balises sémantiques:
+    section, article, aside, nav, header, footer, main  
+ -->

@@ -1,0 +1,42 @@
+Le journal sur le Code
+
+Le langage de base du Web : HTML
+
+
+Postée par Laura Jones le lundi 21 juin 2021
+
+
+Tous les sites et applications web modernes sont construits à l'aide de trois technologies fondamentales : HTML, CSS et JavaScript. Ce sont les langages du Web.
+
+Dans ce numéro, nous allons nous concentrer sur le HTML. Nous allons apprendre ce qu'est le HTML, et pourquoi vous devriez vous aussi l'apprendre.
+
+
+Qu'est-ce que le HTML ?
+
+
+HTML est l'abréviation de HyperText Markup Language. Il s'agit d'un langage de balisage que les développeurs Web utilisent pour structurer et décrire le contenu d'une page Web (ce n'est pas un langage de programmation).
+
+Le HTML se compose d'éléments qui décrivent différents types de contenu : paragraphes, liens, titres, images, vidéo, etc. Les navigateurs Web comprennent le HTML et rendent le code HTML sous forme de sites Web.
+
+
+En HTML, chaque élément est composé de 3 parties :
+
+La balise d'ouverture
+La balise de fermeture
+L'élément proprement dit
+Vous pouvez en savoir plus sur le site MDN Web Docs.
+
+
+Pourquoi apprendre le HTML ?
+
+
+Il existe d'innombrables raisons d'apprendre le langage fondamental du Web. Voici 5 d'entre elles :
+
+Pour être capable d'utiliser le langage fondamental du développement web
+Pour réaliser à la main de beaux sites Web au lieu de s'en remettre à des outils comme Worpress ou Wix.
+Pour réaliser des applications web
+Pour impressionner vos amis
+Pour s'amuser 
+
+J'espère que vous avez appris quelque chose de nouveau ici. À la prochaine fois !
+
